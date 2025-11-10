@@ -1,0 +1,133 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct Node {
+    int data;
+    struct Node* next;
+};
+struct Node* head = NULL;
+void insert(int value) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = value;
+    newNode->next = head;
+    head = newNode;
+}
+void deleteFirst() {
+    if (head == NULL) return;
+    struct Node* temp = head;
+    head = head->next;
+    free(temp);
+}
+void deleteEnd() {
+    if (head == NULL) return;
+    if (head->next == NULL) {
+        free(head);
+        head = NULL;
+        return;
+    }
+    struct Node* temp = head;
+    while (temp->next->next != NULL)
+        temp = temp->next;
+    free(temp->next);
+    temp->next = NULL;
+}
+void deleteSpecific(int value) {
+    if (head == NULL) return;
+    if (head->data == value) {
+        struct Node* temp = head;
+        head = head->next;
+        free(temp);
+        return;
+    }
+    struct Node* temp = head;
+    while (temp->next != NULL && temp->next->data != value)
+        temp = temp->next;
+    if (temp->next == NULL) return;
+    struct Node* toDelete = temp->next;
+    temp->next = temp->next->next;
+    free(toDelete);
+}
+void display() {
+    struct Node* temp = head;
+    while (temp != NULL) {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    }
+    printf("NULL\n");
+}
+int main() {
+    int choice, value;
+    while (1) {
+        printf("1.insert\t 2.delete first element\t 3.delete last element\t 4.delete specific element\t 5.display list\t 6.exit\n");
+
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        switch (choice) {
+            case 1:
+                printf("Enter value to insert: ");
+                scanf("%d", &value);
+                insert(value);
+                break;
+            case 2:
+                deleteFirst();
+                break;
+            case 3:
+                deleteEnd();
+                break;
+            case 4:
+                printf("Enter value to delete: ");
+                scanf("%d", &value);
+                deleteSpecific(value);
+                break;
+            case 5:
+                display();
+                break;
+            case 6:
+                exit(0);
+            default:
+                printf("Invalid choice\n");
+        }
+    }
+    return 0;
+}
+
+output:
+
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 1
+Enter value to insert: 10
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 1
+Enter value to insert: 20
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 1
+Enter value to insert: 30
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 1
+Enter value to insert: 40
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 1
+Enter value to insert: 50
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 1
+Enter value to insert: 60
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 5
+60 -> 50 -> 40 -> 30 -> 20 -> 10 -> NULL
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 2
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 5
+50 -> 40 -> 30 -> 20 -> 10 -> NULL
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 3
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 5
+50 -> 40 -> 30 -> 20 -> NULL
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 4
+Enter value to delete: 30
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 5
+50 -> 40 -> 20 -> NULL
+1.insert         2.delete first element  3.delete last element   4.delete specific element   5.display list  6.exit
+Enter your choice: 6
