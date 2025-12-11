@@ -1,0 +1,71 @@
+1. Insert at end
+2. Insert to left of node
+3. Delete value
+4. Display
+5. Exit
+Enter choice: 1
+Enter value: 10
+
+1. Insert at end
+2. Insert to left of node
+3. Delete value
+4. Display
+5. Exit
+Enter choice: 1
+Enter value: 20
+
+1. Insert at end
+2. Insert to left of node
+3. Delete value
+4. Display
+5. Exit
+Enter choice: 1
+Enter value: 30
+
+1. Insert at end
+2. Insert to left of node
+3. Delete value
+4. Display
+5. Exit
+Enter choice: 4
+10 20 30
+
+1. Insert at end
+2. Insert to left of node
+3. Delete value
+4. Display
+5. Exit
+Enter choice: 2
+Enter target node value: 20
+Enter new value: 15
+
+1. Insert at end
+2. Insert to left of node
+3. Delete value
+4. Display
+5. Exit
+Enter choice: 4
+10 15 20 30
+
+1. Insert at end
+2. Insert to left of node
+3. Delete value
+4. Display
+5. Exit
+Enter choice: 3
+Enter value to delete: 20
+
+1. Insert at end
+2. Insert to left of node
+3. Delete value
+4. Display
+5. Exit
+Enter choice: 4
+10 15 30
+
+1. Insert at end
+2. Insert to left of node
+3. Delete value
+4. Display
+5. Exit
+Enter choice: 5
