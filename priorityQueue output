@@ -1,0 +1,50 @@
+1. Insert
+2. Delete highest priority
+3. Display
+4. Exit
+Enter choice: 1
+Enter value: 40
+Enter priority (lower number = higher priority): 3
+
+1. Insert
+2. Delete highest priority
+3. Display
+4. Exit
+Enter choice: 1
+Enter value: 10
+Enter priority: 1
+
+1. Insert
+2. Delete highest priority
+3. Display
+4. Exit
+Enter choice: 1
+Enter value: 20
+Enter priority: 2
+
+1. Insert
+2. Delete highest priority
+3. Display
+4. Exit
+Enter choice: 3
+40(3) 10(1) 20(2)
+
+1. Insert
+2. Delete highest priority
+3. Display
+4. Exit
+Enter choice: 2
+Deleted: 10
+
+1. Insert
+2. Delete highest priority
+3. Display
+4. Exit
+Enter choice: 3
+40(3) 20(2)
+
+1. Insert
+2. Delete highest priority
+3. Display
+4. Exit
+Enter choice: 4
