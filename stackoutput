@@ -1,0 +1,47 @@
+
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter choice: 1
+Enter value: 10
+
+Enter choice: 1
+Enter value: 20
+
+Enter choice: 1
+Enter value: 30
+
+
+Enter choice: 1
+Enter value: 50
+Stack overflow
+
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter choice: 2
+Popped: 30
+
+Enter choice: 2
+Popped: 20
+
+Enter choice: 2
+Popped: 10
+
+Enter choice: 2
+Stack underflow
+Popped: -1
+
+1. Push
+2. Pop
+3. Display
+4. Exit
+Enter choice: 3
+30 20 10
+
+Enter choice: 3
+Stack is empty
+
+Enter choice: 4
