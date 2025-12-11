@@ -1,0 +1,97 @@
+1. Insert
+2. Delete
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+Enter choice: 1
+Enter value: 50
+
+1. Insert
+2. Delete
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+Enter choice: 1
+Enter value: 30
+
+1. Insert
+2. Delete
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+Enter choice: 1
+Enter value: 70
+
+1. Insert
+2. Delete
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+Enter choice: 1
+Enter value: 20
+
+1. Insert
+2. Delete
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+Enter choice: 1
+Enter value: 40
+
+1. Insert
+2. Delete
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+Enter choice: 3
+20 30 40 50 70
+
+1. Insert
+2. Delete
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+Enter choice: 4
+50 30 20 40 70
+
+1. Insert
+2. Delete
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+Enter choice: 5
+20 40 30 70 50
+
+1. Insert
+2. Delete
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+Enter choice: 2
+Enter value to delete: 30
+
+1. Insert
+2. Delete
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+Enter choice: 3
+20 40 50 70
+
+1. Insert
+2. Delete
+3. Inorder Traversal
+4. Preorder Traversal
+5. Postorder Traversal
+6. Exit
+Enter choice: 6
